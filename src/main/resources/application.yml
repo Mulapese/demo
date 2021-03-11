@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    # Need to add dependency in pom.xml
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/library_management
+    username: postgres
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+server:
+  port: 8081
